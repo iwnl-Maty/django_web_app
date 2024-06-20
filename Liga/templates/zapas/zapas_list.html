@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="container mt-5">
+        <h1 class="mb-4">Seznam zápasů</h1>
+        <div class="list-group">
+            {% for zapas in zapas %}
+                <div class="item">
+                    <div class="info">
+                        <h4><a href="{% url 'Liga:zapas_detail' zapas.pk %}"> {{ zapas.datum_zapasu }} </a></h4>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

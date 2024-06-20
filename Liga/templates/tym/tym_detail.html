@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+        <h1 class="mb-4">Detail týmu</h1>
+        <div>
+            <p><strong>Název týmu:</strong> {{ tym.nazev_tymu }}</p>
+            <p><strong>Goly:</strong> {{ tym.goly }}</p>
+            <p><strong>Výhry:</strong> {{ tym.vyhry }}</p>
+            <p><strong>Prohry:</strong> {{ tym.prohry }}</p>
+            <p><strong>Remízy:</strong> {{ tym.remizy }}</p>
+        </div>
+    </div>
+{% endblock %}

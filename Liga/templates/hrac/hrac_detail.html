@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+        <h1 class="mb-4">Detail hráče</h1>
+        <div>
+            <p><strong>Jméno:</strong> {{ hrac.jmeno }}</p>
+            <p><strong>Příjmení:</strong> {{ hrac.prijmeni }}</p>
+            <p><strong>Goly:</strong> {{ hrac.goly }}</p>
+            <p><strong>Asistence:</strong> {{ hrac.asistence }}</p>
+            <p><strong>Počet zápasů:</strong> {{ hrac.pocet_zapasu }}</p>
+        </div>
+    </div>
+{% endblock %}

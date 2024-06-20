@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="container mt-5">
+        <h1 class="mb-4">Seznam lig</h1>
+        <div class="list-group">
+            {% for liga in liga %}
+                <div class="item">
+                    <div class="info">
+                        <h4><a href="{% url 'Liga:liga_detail' liga.pk %}"> {{ liga.nazev_liga }} </a></h4>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
